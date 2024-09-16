@@ -1,0 +1,199 @@
+@font-face {
+    font-family: neue;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neue;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neue;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "neue";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+#nav {
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a{
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#nav-part2 h4:hover a{
+    color: #fff;
+}
+
+#footer{
+    height: 80vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    padding-top: 2vw;
+}
+
+#footer-top{
+    height: 10vh;
+    width: 100%;
+    padding-top: 2vw;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-top #left{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#left a{
+    font-size: 2vw;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+
+}
+#a1 a{
+    color: transparent;
+    background: linear-gradient(to right, #FF9900, #FF9900);
+    background-clip: text;
+}
+
+#a2 a{
+    color: transparent;
+    background: linear-gradient(to right, #FF8300, #FF8000);
+    background-clip: text;
+}
+
+#a3 a{
+    color: transparent;
+    background: linear-gradient(to right, #FF6D00, #FF6600);
+    background-clip: text;
+}
+
+#a4 a{
+    color: transparent;
+    background: linear-gradient(to right, #FF5500, #FF4F00);
+    background-clip: text;
+}
+
+#footer h1{
+    font-size: 20vw;
+    padding: 0 7.5vw;
+    padding-top: 3vw;
+    color: transparent;
+    background: linear-gradient(to right, orange, orangered);
+    background-clip: text;
+}
+#bb{
+    height: 1px;
+    width: 84%;
+    background: linear-gradient(to right, orange, orangered);
+    position: relative;
+    margin-left: 7.5vw;
+    top: -4%;
+}
+
+#footer-bottom{
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 1.5vw;
+}
+
+#footer-bottom a{
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#b1 a{
+    color: transparent;
+    background: linear-gradient(to right, #FF9700, #FF9300);
+    background-clip: text;
+}
+
+#b2 a{
+    color: transparent;
+    background: linear-gradient(to right, #FF7600, #FF7300);
+    background-clip: text;
+}
+
+#b3 a{
+    color: transparent;
+    background: linear-gradient(to right, #FF5800, #FF4F00);
+    background-clip: text;
+}
